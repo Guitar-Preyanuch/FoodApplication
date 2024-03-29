@@ -1,0 +1,108 @@
+﻿@model FoodApplication.Models.OrderRecipeDetails
+@{
+	ViewData["Title"] = "Home Page";
+}
+
+<div class="container ">
+	<div class="row shadow rounded">
+		<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+			<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner h-100 w-100">
+					<div class="carousel-item active h-100 w-100 ">
+						<img src="./images/corouselImages/salad.jpg" class="d-block w-100 h-100" alt="Recipes">
+					</div>
+					<div class="carousel-item h-100">
+						<img src="./images/corouselImages/salmon.jpg" class="d-block w-100 h-100" alt="Recipes">
+					</div>
+					<div class="carousel-item h-100">
+						<img src="./images/corouselImages/steak.jpg" class="d-block w-100 h-100" alt="Recipes">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+			<div class="mb-3">
+				<h2>
+					Get The Best <span class="text-success fst-italic">Food</span> From
+					<span class="text-success"> The Best Restaurants.</span>
+
+				</h2>
+			</div>
+			<div class="mb-1 p-3">
+				<span><i class="fa-solid fa-seedling text-success mx-2 fs-4"></i></span>
+				<span class="fs-5 text-dark fst-italic"> Fresh Food</span>
+			</div>
+			<div class="mb-1 p-3">
+				<span><i class="fa-solid fa-wheat-awn text-success mx-2 fs-4"></i></span>
+				<span class="fs-5 text-dark fst-italic">Healthy Meal</span>
+			</div>
+			<div class="mb-1 p-3">
+				<span><i class="fa-solid fa-person-biking text-success mx-2 fs-4"></i></span>
+				<span class="fs-5 text-dark fst-italic">Fastest Delivery</span>
+				<p class="py-2">We Promise Deliver Order within 30 Min</p>
+			</div>
+		</div>
+	</div>
+	<div class="row mt-3">
+		<div class="col-12 mb-3">
+			<h2>Today's Special</h2>
+			<div id="todaySpecial" class="row">
+
+				<div class="col-sm-4 col-md-4-col-lg-4 col-xl-4">
+					<div class="card dishCard shadow rounded " >
+						<img class="card-img-top h-75 " src="http://forkify-api.herokuapp.com/images/tortellinisalad2811f.jpg" alt="dish" />
+						<div class="card-body p-0">
+							<h5 class="card-title fw-bold p-1 mx-2">Tortellini Salad</h5>
+							<div class="d-flex flex-wrap justify-content-between mx-2">
+								<a href="/Recipe/Order?id=5ed6604591c37cdc054bce36"
+								   class="btn btn-sm p-2 bg-black text-white shadow rounded ">Order</a>
+								<span class="addToCartIcon px-4" onclick="cart.call(this)"
+									  data-recipeId="5ed6604591c37cdc054bce36">
+									<i class="fa-regular fa-heart fs-3  "></i>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-sm-4 col-md-4-col-lg-4 col-xl-4" >
+					<div class="card dishCard shadow rounded ">
+						<img class="card-img-top h-75 " src="http://forkify-api.herokuapp.com/images/29669_italian_pasta_salad_620cf67.jpg" alt="dish" />
+						<div class="card-body p-0">
+							<h5 class="card-title fw-bold p-1 mx-2">Italian Pasta Salad Recipe</h5>
+							<div class="d-flex flex-wrap justify-content-between mx-2">
+								<a href="/Recipe/Order?id=5ed6604691c37cdc054bcfd6" class="btn btn-sm p-2 bg-black text-white shadow rounded">Order</a>
+								<span class="addToCartIcon px-4" onclick="cart.call(this)"
+									  data-recipeId="5ed6604691c37cdc054bcfd6">
+									<i class="fa-regular fa-heart fs-3"></i>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-4-col-lg-4 col-xl-4">
+					<div class="card dishCard shadow rounded">
+						<img class="card-img-top h-75" src="http://forkify-api.herokuapp.com/images/foster31d1e4.jpg" alt="dish" />
+						<div class="card-body p-0">
+
+							<h5 class="card-title fw-bold p-1 mx-2">Banana Foster</h5>
+							<div class="d-flex flex-wrap justify-content-between mx-2">
+								<a href="/Recipe/Order?id=5ed6604591c37cdc054bcc77" class="btn btn-sm p-2 bg-black text-white shadow rounded ">Order</a>
+								<span class="addToCartIcon px-4" onclick="cart.call(this)"
+									  data-recipeId="5ed6604591c37cdc054bcc77">
+									<i class="fa-regular fa-heart fs-3"></i>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+

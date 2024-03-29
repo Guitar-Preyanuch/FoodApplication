@@ -1,0 +1,140 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+.text-pink{
+    color:deeppink !important;
+}
+.nav-link{
+    letter-spacing: 2px
+}
+#carouselExampleSlidesOnly {
+   height: 400px;
+}
+footer{
+    background-color: #0d243d;
+    
+}
+header{
+    z-index:1000;
+}
+.dishCard {
+    height: 360px;
+    width: 420px;
+}
+.dishCardRecipe {
+    height: 250px;
+    object-fit: cover;
+}
+
+.fa-instagram {
+    color: #8a3ab9;
+}
+.fa-whatsapp {
+    color: #075E54;
+}
+.fa-facebook {
+    color: #1877F2;
+}
+.fa-envelope {
+    color: #ff2400;
+}
+#recipe-list{
+    top:5rem;
+    
+}
+#recipe-list ul::-webkit-scrollbar{
+    width:10px;
+}
+#recipe-list ul::-webkit-scrollbar-track{
+    background-color:white;
+}
+#recipe-list ul::-webkit-scrollbar-thumb{
+    background-color: #ff1448;/*red color*/
+    border-radius:10px;
+}
+.recipe-item :hover {
+    background-color: lightpink;
+    border-radius: 10px;
+}
+.recipe-item:hover a{
+    color:white !important;
+}
+#order-img{
+    height:230px;
+}
+.validation-summary-errors li{
+    color:#dc3545;
+}
+#qty{
+    width:50px;
+    border:none
+}
+#qty:focus{
+    outline:none;
+}
+#qtySection{
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.fa-plus,fa-minus{
+    cursor:pointer;
+}
+#totalAmount,price {
+    width: 60px;
+    border:none;
+}
+#totalAmount:focus, #price:focus{
+    outline:none;
+}
+.addToCartIcon {
+    cursor: pointer;
+}
+.bg-black{
+    background-color: #0d234d;
+}
+#showCartList{
+display:none;
+right:20px;
+width:400px;
+}
+#cartListIcon:hover ~#showCartList {
+    display: block;
+}
+.cartListImg{
+    width:100px;
+    height:60px;
+}
+#showCartList:hover {
+    display: block;
+}
+.cartImage{
+    width:180px;
+    height:100px;
+}
+.cartTitle{
+    width:500px;
+}
+.emptyCart{
+    font-size:300px;
+}
+.removeCartBTN{
+    cursor:pointer;
+}

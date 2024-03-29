@@ -1,0 +1,33 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Order";
+}
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-2">
+            
+           <div class="shadow rounded position-sticky" id="recipe-list">
+             <div class="border-bottom border-3 p-2">
+                 <h4 class="text-pink text-center fst-italic">Recipes</h4>
+                    <partial name="_SideMenu" />
+             </div>  
+           </div>
+        </div>
+        <div class="col-10">
+            <div class="mb-3">
+                <h4 class="text-dark-denter">Order</h4>
+                <div class="row" id="recipeDetails"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function (){
+        getOrdrRecipe('@ViewBag.Id', 'recipeDetails');
+})
+</script>

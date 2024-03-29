@@ -1,0 +1,30 @@
+﻿@model IEnumerable<FoodApplication.Models.Recipe>
+
+@foreach(var recipe in Model)
+{
+
+	<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 mb-3">
+	<div class="shadow rounded p-1 h-100">
+			<div class="card  h-100">
+				<div class="dishCardRecipe">
+					<img src="@recipe.Image_url" class="card-img-top h-100" />
+				</div>
+
+			<div class="card-body p-0">
+					<p class="card-title fw-bold fs-6 text-dark p-1 mx-2">@recipe.Title</p>
+					<span class="card-text p-1 mx-2">@recipe.Publisher</span>
+					<div class="d-flex flex-wrap justify-content-between p-1 mx-2">
+						<a href="/Recipe/Order?id=@recipe.Id"
+						class="btn btn-sm bg-black text-white shadow rounded p-2">Order</a>
+						<span class="addToCartIcon" onclick="cart.call(this)" data-recipeId="@recipe.Id">
+							<i class="fa-regular fa-heart fs-3"></i>
+						</span>
+					</div>					
+			</div>
+		</div>
+	</div>	
+	</div>
+
+
+}
+
